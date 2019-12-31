@@ -9,10 +9,9 @@
 }
 
 .nths>* {
-    flex: 1;
+    flex: 1;    /* creates col per element, akin to Foundation's XY grid */
 }
 
-/* creates col per element, akin to Foundation's XY grid */
 .full>* {
     flex-basis: 100%;
 }
@@ -38,6 +37,10 @@
         flex: 1;
     }
 
+    .sm-full>* {
+        flex-basis: 100%;
+    }
+
     .sm-halves>* {
         flex-basis: 50%;
     }
@@ -58,6 +61,10 @@
 @media(min-width: 768px) {
     .md-nths>* {
         flex: 1;
+    }
+
+    .md-full>* {
+        flex-basis: 100%;
     }
 
     .md-halves>* {
@@ -82,6 +89,10 @@
         flex: 1;
     }
 
+    .lg-full>* {
+        flex-basis: 100%;
+    }
+
     .lg-halves>* {
         flex-basis: 50%;
     }
@@ -99,7 +110,34 @@
     }
 }
 
+@media(min-width: 1280px) {
+    .xl-nths>* {
+        flex: 1;
+    }
+
+    .xl-full>* {
+        flex-basis: 100%;
+    }
+
+    .xl-halves>* {
+        flex-basis: 50%;
+    }
+
+    .xl-thirds>* {
+        flex: 0 0 33.3%;
+    }
+
+    .xl-fourths>* {
+        flex: 0 0 25%;
+    }
+
+    .xl-fifths>* {
+        flex: 0 0 20%;
+    }
+}
+
 /* BOOTSTRAP STYLE GRID - REMOVE IF YOU DON'T REQUIRE IT */
+
 .grid__n {
     flex: 1;
 }
@@ -151,83 +189,6 @@
 
 .grid__12 {
     flex-basis: 100%;
-}
-
-@media(min-width: 1280px) {
-    .xl-remnant>* {
-        flex: 1;
-    }
-
-    .xl-halves>* {
-        flex-basis: 50%;
-    }
-
-    .xl-thirds>* {
-        flex: 0 0 33.3%;
-    }
-
-    .xl-fourths>* {
-        flex: 0 0 25%;
-    }
-
-    .xl-fifths>* {
-        flex: 0 0 20%;
-    }
-}
-
-@media(min-width: 1280px) {
-    .grid__n-xl {
-        flex: 1;
-    }
-
-    /* fills the remaining space */
-    .grid__1-xl {
-        flex-basis: 8.3%;
-    }
-
-    .grid__2-xl {
-        flex-basis: 16.6%;
-    }
-
-    .grid__3-xl {
-        flex-basis: 24.9%;
-    }
-
-    .grid__4-xl {
-        flex-basis: 33.3%;
-    }
-
-    .grid__5-xl {
-        flex-basis: 41.5%;
-    }
-
-    .grid__6-xl {
-        flex-basis: 50%;
-    }
-
-    .grid__7-xl {
-        flex-basis: 58.1%;
-    }
-
-    .grid__8-xl {
-        flex-basis: 66.4%;
-    }
-
-    .grid__9-xl {
-        flex-basis: 75%;
-    }
-
-    .grid__10-xl {
-        flex-basis: 83%;
-    }
-
-    .grid__11-xl {
-        flex-basis: 91.3%;
-    }
-
-    .grid__12-xl {
-        flex-basis: 100%;
-    }
 }
 
 @media(min-width: 640px) {
