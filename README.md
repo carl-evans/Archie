@@ -8,7 +8,7 @@ Mobile-first flex grid that falls back to a block layout where flex isn't suppor
 4. 12 column grid with simple syntax, e.g. grid__6 is half the space, similar to Bootstrap's grid.
 5. Mobile-first, just like to Tailwind's utility classes for creating layouts.
 6. Responsive - uses breakpoints 640px (sm), 768px (md), 1025px (lg), 1280px (xl), and can be customised and extended.
-7. Keeps markup clean - if you want to avoid littering your HTML width class names, Archie uses a universal for selection of equal width column grids. This means you don't need to add class names to child elements. The lower specificity is also easier to override.
+7. Keeps markup clean - if you want to avoid littering your HTML with class names, Archie uses a universal selector for selection of equal width column grids. This means you don't need to add class names to child elements' layout. The lower specificity is also easier to override.
 8. Keeps markup semnatic - you can use the classes with lists, articles, sections, and more.
 9. Easy to add custom, responsive gutters. Add grid modifier classes for horizontal and vertical padding using the universal column selector to target all columns, then add negative margin equal to these amounts on the grid modifier class. This ensures columns remain flush with the grid element.
 10. No reliance on Sass / Less files. I've added source CSS and minified CSS files.
