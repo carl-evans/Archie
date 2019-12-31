@@ -1,0 +1,452 @@
+.grid {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid>* {
+    box-sizing: border-box;
+}
+
+.nths>* {
+    flex: 1;
+}
+
+/* creates col per element, akin to Foundation's XY grid */
+.full>* {
+    flex-basis: 100%;
+}
+
+.halves>* {
+    flex-basis: 50%;
+}
+
+.thirds>* {
+    flex: 0 0 33.3%;
+}
+
+.fourths>* {
+    flex: 0 0 25%;
+}
+
+.fifths>* {
+    flex: 0 0 20%;
+}
+
+@media(min-width: 640px) {
+    .sm-nths>* {
+        flex: 1;
+    }
+
+    .sm-halves>* {
+        flex-basis: 50%;
+    }
+
+    .sm-thirds>* {
+        flex: 0 0 33.3%;
+    }
+
+    .sm-fourths>* {
+        flex: 0 0 25%;
+    }
+
+    .sm-fifths>* {
+        flex: 0 0 20%;
+    }
+}
+
+@media(min-width: 768px) {
+    .md-nths>* {
+        flex: 1;
+    }
+
+    .md-halves>* {
+        flex-basis: 50%;
+    }
+
+    .md-thirds>* {
+        flex: 0 0 33.3%;
+    }
+
+    .md-fourths>* {
+        flex: 0 0 25%;
+    }
+
+    .md-fifths>* {
+        flex: 0 0 20%;
+    }
+}
+
+@media(min-width: 1025px) {
+    .lg-nths>* {
+        flex: 1;
+    }
+
+    .lg-halves>* {
+        flex-basis: 50%;
+    }
+
+    .lg-thirds>* {
+        flex: 0 0 33.3%;
+    }
+
+    .lg-fourths>* {
+        flex: 0 0 25%;
+    }
+
+    .lg-fifths>* {
+        flex: 0 0 20%;
+    }
+}
+
+/* BOOTSTRAP STYLE GRID - REMOVE IF YOU DON'T REQUIRE IT */
+.grid__n {
+    flex: 1;
+}
+
+/* fills the remaining space */
+.grid__1 {
+    flex-basis: 8.3%;
+}
+
+.grid__2 {
+    flex-basis: 16.6%;
+}
+
+.grid__3 {
+    flex-basis: 24.9%;
+}
+
+.grid__4 {
+    flex-basis: 33.3%;
+}
+
+.grid__5 {
+    flex-basis: 41.5%;
+}
+
+.grid__6 {
+    flex-basis: 50%;
+}
+
+.grid__7 {
+    flex-basis: 58.1%;
+}
+
+.grid__8 {
+    flex-basis: 66.4%;
+}
+
+.grid__9 {
+    flex-basis: 75%;
+}
+
+.grid__10 {
+    flex-basis: 83%;
+}
+
+.grid__11 {
+    flex-basis: 91.3%;
+}
+
+.grid__12 {
+    flex-basis: 100%;
+}
+
+@media(min-width: 1280px) {
+    .xl-remnant>* {
+        flex: 1;
+    }
+
+    .xl-halves>* {
+        flex-basis: 50%;
+    }
+
+    .xl-thirds>* {
+        flex: 0 0 33.3%;
+    }
+
+    .xl-fourths>* {
+        flex: 0 0 25%;
+    }
+
+    .xl-fifths>* {
+        flex: 0 0 20%;
+    }
+}
+
+@media(min-width: 1280px) {
+    .grid__n-xl {
+        flex: 1;
+    }
+
+    /* fills the remaining space */
+    .grid__1-xl {
+        flex-basis: 8.3%;
+    }
+
+    .grid__2-xl {
+        flex-basis: 16.6%;
+    }
+
+    .grid__3-xl {
+        flex-basis: 24.9%;
+    }
+
+    .grid__4-xl {
+        flex-basis: 33.3%;
+    }
+
+    .grid__5-xl {
+        flex-basis: 41.5%;
+    }
+
+    .grid__6-xl {
+        flex-basis: 50%;
+    }
+
+    .grid__7-xl {
+        flex-basis: 58.1%;
+    }
+
+    .grid__8-xl {
+        flex-basis: 66.4%;
+    }
+
+    .grid__9-xl {
+        flex-basis: 75%;
+    }
+
+    .grid__10-xl {
+        flex-basis: 83%;
+    }
+
+    .grid__11-xl {
+        flex-basis: 91.3%;
+    }
+
+    .grid__12-xl {
+        flex-basis: 100%;
+    }
+}
+
+@media(min-width: 640px) {
+    .grid__n-sm {
+        flex: 1;
+    }
+
+    .grid__1-sm {
+        flex-basis: 8.3%;
+    }
+
+    .grid__2-sm {
+        flex-basis: 16.6%;
+    }
+
+    .grid__3-sm {
+        flex-basis: 24.9%;
+    }
+
+    .grid__4-sm {
+        flex-basis: 33.3%;
+    }
+
+    .grid__5-sm {
+        flex-basis: 41.5%;
+    }
+
+    .grid__6-sm {
+        flex-basis: 50%;
+    }
+
+    .grid__7-sm {
+        flex-basis: 58.1%;
+    }
+
+    .grid__8-sm {
+        flex-basis: 66.4%;
+    }
+
+    .grid__9-sm {
+        flex-basis: 75%;
+    }
+
+    .grid__10-sm {
+        flex-basis: 83%;
+    }
+
+    .grid__11-sm {
+        flex-basis: 91.3%;
+    }
+
+    .grid__12-sm {
+        flex-basis: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    .grid__n-md {
+        flex: 1;
+    }
+
+    .grid__1-md {
+        flex-basis: 8.3%;
+    }
+
+    .grid__2-md {
+        flex-basis: 16.6%;
+    }
+
+    .grid__3-md {
+        flex-basis: 24.9%;
+    }
+
+    .grid__4-md {
+        flex-basis: 33.3%;
+    }
+
+    .grid__5-md {
+        flex-basis: 41.5%;
+    }
+
+    .grid__6-md {
+        flex-basis: 50%;
+    }
+
+    .grid__7-md {
+        flex-basis: 58.1%;
+    }
+
+    .grid__8-md {
+        flex-basis: 66.4%;
+    }
+
+    .grid__9-md {
+        flex-basis: 75%;
+    }
+
+    .grid__10-md {
+        flex-basis: 83%;
+    }
+
+    .grid__11-md {
+        flex-basis: 91.3%;
+    }
+
+    .grid__12-md {
+        flex-basis: 100%;
+    }
+}
+
+@media(min-width: 1025px) {
+    .grid__n-lg {
+        flex: 1;
+    }
+
+    .grid__1-lg {
+        flex-basis: 8.3%;
+    }
+
+    .grid__2-lg {
+        flex-basis: 16.6%;
+    }
+
+    .grid__3-lg {
+        flex-basis: 24.9%;
+    }
+
+    .grid__4-lg {
+        flex-basis: 33.3%;
+    }
+
+    .grid__5-lg {
+        flex-basis: 41.5%;
+    }
+
+    .grid__6-lg {
+        flex-basis: 50%;
+    }
+
+    .grid__7-lg {
+        flex-basis: 58.1%;
+    }
+
+    .grid__8-lg {
+        flex-basis: 66.4%;
+    }
+
+    .grid__9-lg {
+        flex-basis: 75%;
+    }
+
+    .grid__10-lg {
+        flex-basis: 83%;
+    }
+
+    .grid__11-lg {
+        flex-basis: 91.3%;
+    }
+
+    .grid__12-lg {
+        flex-basis: 100%;
+    }
+}
+
+@media(min-width: 1280px) {
+    .grid__n-xl {
+        flex: 1;
+    }
+
+    .grid__1-xl {
+        flex-basis: 8.3%;
+    }
+
+    .grid__2-xl {
+        flex-basis: 16.6%;
+    }
+
+    .grid__3-xl {
+        flex-basis: 24.9%;
+    }
+
+    .grid__4-xl {
+        flex-basis: 33.3%;
+    }
+
+    .grid__5-xl {
+        flex-basis: 41.5%;
+    }
+
+    .grid__6-xl {
+        flex-basis: 50%;
+    }
+
+    .grid__7-xl {
+        flex-basis: 58.1%;
+    }
+
+    .grid__8-xl {
+        flex-basis: 66.4%;
+    }
+
+    .grid__9-xl {
+        flex-basis: 75%;
+    }
+
+    .grid__10-xl {
+        flex-basis: 83%;
+    }
+
+    .grid__11-xl {
+        flex-basis: 91.3%;
+    }
+
+    .grid__12-xl {
+        flex-basis: 100%;
+    }
+}
+
+/* 
+To add padding to cols, create a grid modifier class that targets * elements inside,
+then add a negative margin on the grid, equal to the padding that you have added to cols.
+*/
