@@ -136,6 +136,58 @@
     }
 }
 
+@media(min-width: 1600px) {
+    .xxl-nths>* {
+        flex: 1;
+    }
+
+    .xxl-full>* {
+        flex-basis: 100%;
+    }
+
+    .xxl-halves>* {
+        flex-basis: 50%;
+    }
+
+    .xxl-thirds>* {
+        flex-basis: 33.3%;
+    }
+
+    .xxl-fourths>* {
+        flex-basis: 25%;
+    }
+
+    .xxl-fifths>* {
+        flex-basis: 20%;
+    }
+}
+
+@media(min-width: 2080px) {
+    .xxxl-nths>* {
+        flex: 1;
+    }
+
+    .xxxl-full>* {
+        flex-basis: 100%;
+    }
+
+    .xxxl-halves>* {
+        flex-basis: 50%;
+    }
+
+    .xxxl-thirds>* {
+        flex-basis: 33.3%;
+    }
+
+    .xxxl-fourths>* {
+        flex-basis: 25%;
+    }
+
+    .xxxl-fifths>* {
+        flex-basis: 20%;
+    }
+}
+
 /* BOOTSTRAP STYLE GRID - REMOVE IF YOU DON'T REQUIRE IT */
 
 .grid__n {
@@ -403,6 +455,114 @@
     }
 
     .grid__12-xl {
+        flex-basis: 100%;
+    }
+}
+
+@media(min-width: 1600px) {
+    .grid__n-xxl {
+        flex: 1;
+    }
+
+    .grid__1-xxl {
+        flex-basis: 8.3%;
+    }
+
+    .grid__2-xxl {
+        flex-basis: 16.6%;
+    }
+
+    .grid__3-xxl {
+        flex-basis: 24.9%;
+    }
+
+    .grid__4-xxl {
+        flex-basis: 33.3%;
+    }
+
+    .grid__5-xxl {
+        flex-basis: 41.5%;
+    }
+
+    .grid__6-xxl {
+        flex-basis: 50%;
+    }
+
+    .grid__7-xxl {
+        flex-basis: 58.1%;
+    }
+
+    .grid__8-xxl {
+        flex-basis: 66.4%;
+    }
+
+    .grid__9-xxl {
+        flex-basis: 75%;
+    }
+
+    .grid__10-xxl {
+        flex-basis: 83%;
+    }
+
+    .grid__11-xxl {
+        flex-basis: 91.3%;
+    }
+
+    .grid__12-xxl {
+        flex-basis: 100%;
+    }
+}
+
+@media(min-width: 2080px) {
+    .grid__n-xxxl {
+        flex: 1;
+    }
+
+    .grid__1-xxxl {
+        flex-basis: 8.3%;
+    }
+
+    .grid__2-xxxl {
+        flex-basis: 16.6%;
+    }
+
+    .grid__3-xxxl {
+        flex-basis: 24.9%;
+    }
+
+    .grid__4-xxxl {
+        flex-basis: 33.3%;
+    }
+
+    .grid__5-xxxl {
+        flex-basis: 41.5%;
+    }
+
+    .grid__6-xxxl {
+        flex-basis: 50%;
+    }
+
+    .grid__7-xxxl {
+        flex-basis: 58.1%;
+    }
+
+    .grid__8-xxxl {
+        flex-basis: 66.4%;
+    }
+
+    .grid__9-xxxl {
+        flex-basis: 75%;
+    }
+
+    .grid__10-xxxl {
+        flex-basis: 83%;
+    }
+
+    .grid__11-xxxl {
+        flex-basis: 91.3%;
+    }
+
+    .grid__12-xxxl {
         flex-basis: 100%;
     }
 }
