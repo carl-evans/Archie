@@ -21,15 +21,15 @@
 }
 
 .thirds>* {
-    flex: 0 0 33.3%;
+    flex-basis: 33.3%;
 }
 
 .fourths>* {
-    flex: 0 0 25%;
+    flex-basis: 25%;
 }
 
 .fifths>* {
-    flex: 0 0 20%;
+    flex-basis: 20%;
 }
 
 @media(min-width: 640px) {
@@ -46,15 +46,15 @@
     }
 
     .sm-thirds>* {
-        flex: 0 0 33.3%;
+        flex-basis: 33.3%;
     }
 
     .sm-fourths>* {
-        flex: 0 0 25%;
+        flex-basis: 25%;
     }
 
     .sm-fifths>* {
-        flex: 0 0 20%;
+        flex-basis: 20%;
     }
 }
 
@@ -72,15 +72,15 @@
     }
 
     .md-thirds>* {
-        flex: 0 0 33.3%;
+        flex-basis: 33.3%;
     }
 
     .md-fourths>* {
-        flex: 0 0 25%;
+        flex-basis: 25%;
     }
 
     .md-fifths>* {
-        flex: 0 0 20%;
+        flex-basis: 20%;
     }
 }
 
@@ -98,15 +98,15 @@
     }
 
     .lg-thirds>* {
-        flex: 0 0 33.3%;
+        flex-basis: 33.3%;
     }
 
     .lg-fourths>* {
-        flex: 0 0 25%;
+        flex-basis: 25%;
     }
 
     .lg-fifths>* {
-        flex: 0 0 20%;
+        flex-basis: 20%;
     }
 }
 
@@ -124,15 +124,15 @@
     }
 
     .xl-thirds>* {
-        flex: 0 0 33.3%;
+        flex-basis: 33.3%;
     }
 
     .xl-fourths>* {
-        flex: 0 0 25%;
+        flex-basis: 25%;
     }
 
     .xl-fifths>* {
-        flex: 0 0 20%;
+        flex-basis: 20%;
     }
 }
 
