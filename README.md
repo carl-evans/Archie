@@ -27,7 +27,7 @@ https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/
 
 I have personally found that the more specific CSS is, the harder it is to maintain and extend. That's why I opted for the use of the universal selector. However, you are welcome to find and replace instances of it them to a class name of your choice.
 
-# How to add padding to columns?
+# How to add space between columns and rows?
 Consider the following example classes and extend / customise to fit your needs. In this example, we create 50px space between each column and 30px of vertical space between each row. You could also create a single class that handles spacing on both the horizontal and vertical access. It's easy to create loads of varied grids with Archie as a base for you to build upon. 
 
 ```
