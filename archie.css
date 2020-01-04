@@ -2,6 +2,9 @@
     display: block;
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .grid>* {
@@ -9,7 +12,8 @@
 }
 
 .nths>* {
-    flex: 1;    /* creates col per element, akin to Foundation's XY grid */
+    flex: 1;
+    /* creates col per element, akin to Foundation's XY grid */
 }
 
 .full>* {
