@@ -12,6 +12,7 @@ Mobile-first flex grid that falls back to a block layout where flex isn't suppor
 8. Keeps markup semnatic - you can create CSS grids with lists, articles, sections, and more.
 9. Easy to add custom, responsive gutters. Add grid modifier classes for horizontal and vertical padding using the universal column selector to target all columns, then add negative margin equal to these amounts on the grid modifier class. This ensures that the columns remain flush with the grid element.
 10. No reliance on Sass / Less files. I've added source CSS and minified CSS files.
+11. Minified CSS file is autoprefixed to improve browser compatability.
 
 # Download
 You may add the archie.min.css file straight to your project or you may wish to download the archie.css file to make modifications easier. You should minify your CSS and consider a plugin such as Purge CSS if you use Archie in production.
