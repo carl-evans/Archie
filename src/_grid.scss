@@ -1,0 +1,28 @@
+$grid-padding: 30px;
+$archie-grid-max-widths: (
+    "1600": 1600px,
+
+);
+
+.grid {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: $grid-padding;
+    padding-right: $grid-padding;
+}
+
+@each $maxWidthName, $maxWidthValue in $archie-grid-max-widths {
+    .grid--#{$maxWidthName} {
+        max-width: $maxWidthValue;
+    }
+    @media(min-width: $maxWidthValue) {
+        .grid--#{$maxWidthName} {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: unset;
+            padding-right: unset;
+        }
+    }
+}

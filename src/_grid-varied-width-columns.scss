@@ -1,0 +1,32 @@
+$itemsPerRow: 12;
+
+@each $breakpointName, $breakpointValue in $archie-breakpoints {
+    @if $breakpointName !="" {
+        @media(min-width: $breakpointValue) {
+            @for $i from 0 through $itemsPerRow {
+                @if $i != 0 {
+                    .#{$breakpointName}-grid__#{$i} {
+                        flex-basis: $i * (100% / $itemsPerRow);
+                    }
+                } @else {
+                    // fill the remaining space of row
+                    .#{$breakpointName}-grid__n {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    } @else {
+        @for $i from 0 through $itemsPerRow {
+            @if $i != 0 {
+                .grid__#{$i} {
+                    flex-basis: $i * (100% / $itemsPerRow);
+                }
+            } @else {
+                .grid__n {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}

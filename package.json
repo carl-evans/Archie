@@ -4,7 +4,7 @@
   "description": "Mobile-first flexbox grid that falls back to a block layout where flex isn't supported. Specialises in equal width and odd column grids e.g. fifths but also offers varied width columns.",
   "main": "index.js",
   "scripts": {
-    "dev-sass": "node-sass src/grid.scss dist/archie.min.css -w --output-style compressed",
+    "dev-sass": "node-sass src/main.scss dist/archie.min.css -w --output-style compressed",
     "dev-watch": "browser-sync start --server --files '*.html, dist/css/*.css'",
     "build": "concurrently \"npm:dev-*\""
   },

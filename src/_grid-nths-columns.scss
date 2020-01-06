@@ -1,0 +1,40 @@
+$archie-grid-nths-options: (
+"nths": 0,
+"full": 1,
+"halves": 2,
+"thirds": 3,
+"fourths": 4,
+"fifths": 5,
+);
+
+@each $breakpointName, $breakpointValue in $archie-breakpoints {
+    @if $breakpointName !="" {
+        @media(min-width: $breakpointValue) {
+            @each $className, $itemsPerRow in $archie-grid-nths-options {
+                .#{$breakpointName}-#{$className} > * {
+                    // col per element
+                    @if $itemsPerRow == 0 {
+                        flex-basis: 0;
+                        flex-grow: 1;
+                    // equal width cols
+                    } @else {
+                        flex-basis: 100% / $itemsPerRow;
+                    }
+                }
+            }
+        }
+    } @else {
+        @each $className, $itemsPerRow in $archie-grid-nths-options {
+            .#{$className} > * {
+                // col per element
+                @if $itemsPerRow == 0 {
+                    flex-basis: 0;
+                    flex-grow: 1;
+                // equal width cols
+                } @else {
+                    flex-basis: 100% / $itemsPerRow;
+                }
+            }
+        }
+    }
+}

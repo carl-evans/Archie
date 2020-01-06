@@ -1,0 +1,14 @@
+$archie-sm: 640px;
+$archie-md: 768px;
+$archie-lg: 1025px;
+$archie-xl: 1600px;
+
+
+$archie-breakpoints: (
+"": "",
+"sm": $archie-sm,
+"md": $archie-md,
+"lg": $archie-lg,
+"xl": $archie-xl,
+
+);
