@@ -8,11 +8,17 @@ $itemsPerRow: 12;
                     .#{$breakpointName}-grid__#{$i} {
                         flex-basis: $i * (100% / $itemsPerRow);
                     }
+                    .#{$breakpointName}-grid__offset-#{$i} {
+                        margin-left: $i * (100% / $itemsPerRow);
+                    }
                 } @else {
                     // fill the remaining space of row
                     .#{$breakpointName}-grid__n {
                         flex: 1;
                     }
+                }
+                .grid__offset-#{$i} {
+                    margin-left: $i * (100% / $itemsPerRow);
                 }
             }
         }
