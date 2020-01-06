@@ -11,6 +11,7 @@ $archie-grid-max-widths: (
     list-style-type: none;
     padding-left: $grid-padding;
     padding-right: $grid-padding;
+    & > * { box-sizing: border-box; }
 }
 
 @each $maxWidthName, $maxWidthValue in $archie-grid-max-widths {
